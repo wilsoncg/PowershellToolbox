@@ -2,11 +2,11 @@
 
 ###### Modules
 
-* Script module ([Vmware-workflows](http://github.com/wilsoncg/PowershellToolbox/Modules/vmware-workflows))
+* Script module ([Vmware-workflows](http://github.com/wilsoncg/PowershellToolbox/tree/master/Modules/vmware-workflows))
   * wraps REST web calls to Vsphere
   * Combine credential object with Authorization:Basic header
 
-* Script module ([EdbAndTeamcity](http://github.com/wilsoncg/PowershellToolbox/Modules/EdbAndTeamcity))
+* Script module ([EdbAndTeamcity](http://github.com/wilsoncg/PowershellToolbox/tree/master/Modules/EdbAndTeamcity))
   * Wrap REST calls to teamcity
   * Fetching data from OData source
   * Example of working nuspec and powershell module specification
@@ -27,12 +27,12 @@
 * Query AD to find out what groups a user is a member of
 
 ###### SQL
-* Use SMO to extract a full database ([DatabaseCreation](http://github.com/wilsoncg/PowershellToolbox/Sql/DatabaseCreation))
-* Update a local BIN range table ([BinRange](http://github.com/wilsoncg/PowershellToolbox/Sql/BinRange))
+* Use SMO to extract a full database ([DatabaseCreation](http://github.com/wilsoncg/PowershellToolbox/tree/master/Sql/DatabaseCreation))
+* Update a local BIN range table ([BinRange](http://github.com/wilsoncg/PowershellToolbox/tree/master/Sql/BinRange))
 * Examples of using Invoke-sqlcmd 
 
 ###### TFS
-* Get TFS locked files ([Tfs-Get-Locks](http://github.com/wilsoncg/PowershellToolbox/Tfs/tfs-get-locks.ps1))
+* Get TFS locked files ([Tfs-Get-Locks](http://github.com/wilsoncg/PowershellToolbox/tree/master/Tfs/tfs-get-locks.ps1))
   * Write C# code inside powershell
   * Reference and load TFS assemblies
   * Contact TFS server to find locked files
