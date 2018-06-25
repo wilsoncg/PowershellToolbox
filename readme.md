@@ -2,7 +2,7 @@
 
 ###### Modules
 
-* Script module ([Vmware-workflows](http://github.com/wilsoncg/PowershellToolbox/tree/master/Modules/vmware-workflows))
+* Script module ([Vmware-workflows](http://github.com/wilsoncg/PowershellToolbox/tree/master/Modules/Vmware-Workflows))
   * wraps REST web calls to Vsphere
   * Combine credential object with Authorization:Basic header
 
