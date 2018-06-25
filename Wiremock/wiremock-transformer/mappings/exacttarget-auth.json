@@ -1,0 +1,11 @@
+{
+    "request": {
+            "method": "POST",
+            "url": "/et/v1/requestToken"
+    },
+    "response": {
+            "status": 200,
+            "bodyFileName": "exacttarget/auth.json",
+            "headers": { "Content-Type": "application/json" }
+    }
+}

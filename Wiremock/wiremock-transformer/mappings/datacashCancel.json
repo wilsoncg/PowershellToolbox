@@ -1,0 +1,15 @@
+{
+    "request": {
+            "method": "POST",
+            "url": "/Transaction/cnp_a",
+			"bodyPatterns": [{ 
+				"contains": "<method>cancel</method>" }]
+    },
+    "response": {
+            "status": 200,
+            "bodyFileName": "datacashCancelResponse.xml",
+            "headers": {
+                    "Content-Type": "application/xml"
+            }
+    }
+}

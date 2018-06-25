@@ -1,0 +1,12 @@
+{
+    "request": {
+            "method": "POST",
+            "url": "/Transaction/cnp_a",
+			"bodyPatterns": [{ 
+				"contains": "<method>erp</method>" }]
+    },
+    "response": {
+            "status": 200,
+            "bodyFileName": "datacashErpResponseSuccess.xml"
+    }
+}

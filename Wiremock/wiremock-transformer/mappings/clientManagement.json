@@ -1,0 +1,9 @@
+{
+    "request": {
+            "method": "POST",
+            "url": "/ClientManagement/ClientManagementService.asmx"
+    },
+    "response": {
+			"fault": "MALFORMED_RESPONSE_CHUNK"
+    }
+}

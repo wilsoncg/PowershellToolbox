@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <GetClientAccountMarginResponse xmlns="http://cityindex.co.uk/Margining">
+            <GetClientAccountMarginResult>
+                <Margin>0</Margin>
+                <Cash>1000.00</Cash>
+                <CreditAllocation>0</CreditAllocation>
+                <WaivedMarginRequirement>0</WaivedMarginRequirement>
+                <Collateral>0</Collateral>
+                <SpecialOfferCredit>0</SpecialOfferCredit>
+                <MarginHeadRoom>-1</MarginHeadRoom>
+                <MarginIndicator>-1</MarginIndicator>
+                <TotalMarginRequirement>0</TotalMarginRequirement>
+                <OpenTradeEquity>0</OpenTradeEquity>
+                <NetEquity>1000.00</NetEquity>
+                <TradingResource>1000.00</TradingResource>
+                <TradableFunds>1000.00</TradableFunds>
+                <CurrencyId>6</CurrencyId>
+                <CurrencyISOCode>GBP</CurrencyISOCode>
+                <TradingAccountId>0</TradingAccountId>
+                <SameDayCall>false</SameDayCall>
+                <MarginType>Margin</MarginType>
+                <DueDate xsi:nil="true" />
+                <PendingFunds>0</PendingFunds>
+                <PendingFundsDueDateUTC xsi:nil="true" />
+                <ClientAccountCode></ClientAccountCode>
+            </GetClientAccountMarginResult>
+        </GetClientAccountMarginResponse>
+    </soap:Body>
+</soap:Envelope>

@@ -1,0 +1,23 @@
+{
+	"priority": 1,
+    "request": {
+            "method": "POST",
+            "url": "/payment/netbanxasiaprocessservice.asmx",
+			"bodyPatterns": [{ 
+				"matchesXPath": "//*[local-name()='StartProcess']" }]
+    },
+    "response": {
+		"proxyBaseUrl" : "http://lon-ws01157"
+    },
+	"priority": 2,
+    "request": {
+            "method": "POST",
+            "url": "/payment/netbanxasiaprocessservice.asmx",
+			"bodyPatterns": [{ 
+				"matchesXPath": "//UpdateProcess" }]
+    },
+    "response": {
+            "status": "500",
+			"body": "Error"
+    }
+}

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>EdbAndTeamcity</id>
+    <version>1.0.0.0</version>
+    <title>EdbAndTeamcity</title>
+    <authors>Craig Wilson</authors>
+    <owners>Craig Wilson</owners>
+    <licenseUrl>http://www.cityindex.co.uk/</licenseUrl>
+    <projectUrl>https://tfs/DefaultCollection/Genesis/_versionControl#path=%24%2FPayment+Team%2FVMDeploy%2FModules%2FEdbAndTeamcity</projectUrl>
+    <iconUrl>http://library.nuget.cityindex.co.uk/content/images/cityindex_avatar.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>EdbAndTeamcity powershell module
+============================
+
+1) Register nuget Repository
+PS: Register-PSRepository -name "internal.nuget.org" -SourceLocation "http://internal.nuget.cityindex.co.uk/api/v2" -PublishLocation "http://internal.nuget.cityindex.co.uk/api/v2/packages" -InstallationPolicy Trusted
+
+2) Install module for use
+PS: Install-Module -Repository internal.nuget.org -Name EdbAndTeamcity -Scope CurrentUser -verbose
+
+To update to latest version
+PS: Update-Module EdbAndTeamcity
+
+Notes:
+This Microsoft PowerShell module contains Cmdlets for obtaining information from EDB and teamcity (by making to the JSON web requests to the ODATA supplied by EDB, and web requests to the teamcity web API).
+    </description>
+    <copyright>Copyright 2017</copyright>
+    <tags>edb teamcity PSModule</tags>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+   <file src="EdbAndTeamcity.psd1" target=""/>
+   <file src="EdbAndTeamcity.psm1" target=""/>
+   <file src="Cmdlet-Scripts\Get-EdbChangeRequestDetails.ps1" target="Cmdlet-Scripts"/>
+   <file src="Cmdlet-Scripts\Get-EdbShellPlugins.ps1" target="Cmdlet-Scripts"/>
+   <file src="Cmdlet-Scripts\Get-EdbWebServices.ps1" target="Cmdlet-Scripts"/>
+   <file src="Cmdlet-Scripts\Get-EdbWebServiceServerDeployedOn.ps1" target="Cmdlet-Scripts"/>
+   <file src="Cmdlet-Scripts\Get-EdbWinServices.ps1" target="Cmdlet-Scripts"/>
+   <file src="Cmdlet-Scripts\Get-EdbWinServicesServerDeployedOn.ps1" target="Cmdlet-Scripts"/>
+   <file src="Cmdlet-Scripts\Get-TeamcityArtifactDownloadUrl.ps1" target="Cmdlet-Scripts"/>
+   <file src="Cmdlet-Scripts\Set-TeamcityBuildToPinned.ps1" target="Cmdlet-Scripts"/>
+  </files>
+</package>

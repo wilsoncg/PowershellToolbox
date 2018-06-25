@@ -1,0 +1,13 @@
+{
+	"request": {
+            "method": "POST",
+            "url": "/TradingApi/message/translationWithInterestingItems"
+    },
+    "response": {
+            "status": 200,
+            "bodyFileName": "messageLookupBrandingResponse.json",
+            "headers": {
+                    "Content-Type": "application/json"
+            }
+    }
+}

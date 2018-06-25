@@ -1,0 +1,14 @@
+{
+    "request": {
+            "method": "POST",
+            "url": "/Transaction/cnp_a",
+			"bodyPatterns": [
+			{ "contains": "<method>pre</method>" }]
+    },
+    "response": {
+            "status": 200,
+            "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Response><CardTxn><card_scheme>VISA Debit</card_scheme><country>United Kingdom</country><token>C4360560C4AF6E9370E3AEC068ECBE94828D2B5B</token></CardTxn><datacash_reference>$(!RandomInteger)</datacash_reference><merchantreference>$(Transaction.TxnDetails.merchantreference)</merchantreference><mode>LIVE</mode><reason>3DS Card not Enrolled</reason><status>162</status><time>1473337464</time></Response>",
+			"transformers": ["body-transformer"],
+            "headers": { "Content-Type": "application/xml" }
+    }
+}

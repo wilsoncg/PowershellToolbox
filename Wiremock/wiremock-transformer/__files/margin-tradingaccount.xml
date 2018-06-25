@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <GetTradingAccountMarginResponse xmlns="http://cityindex.co.uk/Margining">
+            <GetTradingAccountMarginResult>
+                <MarginResponseDTO>
+                    <Margin>0</Margin>
+                    <Cash>10000.00</Cash>
+                    <CreditAllocation>0</CreditAllocation>
+                    <WaivedMarginRequirement>0</WaivedMarginRequirement>
+                    <Collateral>0</Collateral>
+                    <SpecialOfferCredit>0</SpecialOfferCredit>
+                    <MarginHeadRoom>0</MarginHeadRoom>
+                    <MarginIndicator>0.00</MarginIndicator>
+                    <TotalMarginRequirement>0.00</TotalMarginRequirement>
+                    <OpenTradeEquity>00.00</OpenTradeEquity>
+                    <NetEquity>1602.41</NetEquity>
+                    <TradingResource>10000.00</TradingResource>
+                    <TradableFunds>0</TradableFunds>
+                    <CurrencyId>6</CurrencyId>
+                    <CurrencyISOCode>GBP</CurrencyISOCode>
+                    <TradingAccountId>0</TradingAccountId>
+                    <TradingAccountCode>CX563170</TradingAccountCode>
+                    <TradingAccountType>Spread Betting</TradingAccountType>
+                    <SameDayCall>false</SameDayCall>
+                    <MarginType>Margin</MarginType>
+                    <DueDate xsi:nil="true" />
+                    <PendingFunds>0</PendingFunds>
+                    <PendingFundsDueDateUTC xsi:nil="true" />
+                    <ClientAccountCode />
+                </MarginResponseDTO>
+            </GetTradingAccountMarginResult>
+        </GetTradingAccountMarginResponse>
+    </soap:Body>
+</soap:Envelope>

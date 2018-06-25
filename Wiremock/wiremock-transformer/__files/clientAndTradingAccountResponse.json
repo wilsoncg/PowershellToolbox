@@ -1,0 +1,22 @@
+{
+	"LogonUserName" : "Wiremock user",
+	"PersonalEmailAddress" : "wiremockuser@cityindex.com",
+	"AccountOperatorId" : 2222,
+	"ClientAccountCurrency" : "USD",
+	"AccountHolders" : 
+	[{
+		"LegalPartyId" : 1111,
+		"Name" : "Wiremock 1111"
+	}],
+	"TradingAccounts" : 
+	[{
+		"TradingAccountId" : 123,
+		"TradingAccountCode" : "DM1234",
+		"TradingAccountStatus" : "open"
+	},
+	{
+		"TradingAccountId" : 345,
+		"TradingAccountCode" : "DM3456",
+		"TradingAccountStatus" : "open"
+	}]
+}

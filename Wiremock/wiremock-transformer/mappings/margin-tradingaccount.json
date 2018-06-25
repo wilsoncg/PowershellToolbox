@@ -1,0 +1,14 @@
+{
+    "request": {
+            "method": "POST",
+			"url": "/Margin.asmx",
+			"bodyPatterns": [{ 
+				"matchesXPath": "//*[local-name()='GetTradingAccountMargin']" }]
+    },
+    "response": {
+            "status": 200,
+            "bodyFileName": "margin-tradingaccount.xml",
+			"transformers": ["body-transformer"],
+            "headers": { "Content-Type": "text/xml;charset=utf-8" }
+    }
+}

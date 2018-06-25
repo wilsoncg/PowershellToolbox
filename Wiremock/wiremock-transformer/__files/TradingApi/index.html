@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Ajax Test Harness</title>    
+    <script src="/tradingapi/Scripts/jquery.js"></script>
+</head>
+    <body>        
+
+<h2>Ajax Test Harness</h2>
+<script src="/tradingapi/Scripts/tradingApi.js" language="javascript" type="text/javascript"></script>
+<script src="/tradingapi/Scripts/json2.js" language="javascript" type="text/javascript"></script>
+<div id="apitest">
+    <form id="form1" runat="server"></form>
+    <hr />
+    <h2>Test Harness</h2>
+    <button onclick=" eval($('#code').val()); ">Execute</button><br />
+    <textarea id="code" cols="120" rows="15">
+        var userName = "DM631479";
+        doPost('/session',{ "UserName": userName, "Password": "password"}, function (data, textCode) {    
+            // Smoke Test
+            doGet('/smoketest');
+    
+            setRequestHeader("UserName", userName);
+            setRequestHeader("Session", data.Session);
+            
+            // Authentication Test
+            doGet('/smoketest/authenticated');
+    
+            // Account Information Tests
+            doGet('/useraccount/DM631479/ChartingEnabled');
+            doGet('/useraccount/ClientAndTradingAccount');
+            // Need Valid Test Data doPost('/useraccount/Save', {"PersonalEmailAddress":"not@realaddress.com","PersonalEmailAddressIsDirty":true})
+    
+            // Cfd Markets Test
+            doGet('/cfd/markets?marketname=uk&maxresults=10&usemobileshortname=true');
+
+            //Logoff
+            doPost('/session/deleteSession?userName='+userName+'&session='+data.Session);
+        
+           
+
+        });
+        /* var userName = "DM631479";
+            cityindex.corsTesting.doPost('/session',{ "UserName": userName, "Password": "password"}, function (data, textCode) {    
+            });*/
+        </textarea>
+    <br />
+    <select id="result" style="background-color: #e4e4e4; min-height: 300px;" multiple="multiple"></select>
+    <hr />
+</div>
+
+    </body>
+</html>

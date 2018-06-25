@@ -1,0 +1,11 @@
+{
+	"request": {
+            "method": "POST",
+            "url": "/et/interaction/v1/events"
+    },
+    "response": {
+            "status": 200,
+            "bodyFileName": "exacttarget/event.json",
+            "headers": { "Content-Type": "application/json" }
+    }
+}

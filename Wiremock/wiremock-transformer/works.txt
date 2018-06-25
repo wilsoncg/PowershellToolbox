@@ -1,0 +1,4 @@
+powershell.exe -executionpolicy bypass -c & 'C:\\Windows\\System32\\WiremockAsService.ps1' -runDir "C:\dev\Projects-TFS\PaymentTeam\Tools\wiremock-transformer" -start
+
+works:
+powershell.exe -executionpolicy bypass -command "& 'C:\\Windows\\System32\\WiremockAsService.ps1' -runDir C:\dev\Projects-TFS\PaymentTeam\Tools\wiremock-transformer -start"

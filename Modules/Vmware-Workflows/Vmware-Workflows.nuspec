@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Vmware-Workflows</id>
+    <version>1.0.0.0</version>
+    <title>Vmware-Workflows</title>
+    <authors>Craig Wilson</authors>
+    <owners>Craig Wilson</owners>
+    <licenseUrl>http://www.cityindex.co.uk/</licenseUrl>
+    <projectUrl>https://tfs/DefaultCollection/Payment%20Team/_versionControl#path=%24%2FPayment+Team%2FVMDeploy%2FModules%2FVmware-Workflows</projectUrl>
+    <iconUrl>http://library.nuget.cityindex.co.uk/content/images/cityindex_avatar.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Vmware-Workflows powershell module
+============================
+
+1) Register nuget Repository
+PS: Register-PSRepository -name "internal.nuget.org" -SourceLocation "http://internal.nuget.cityindex.co.uk/api/v2" -PublishLocation "http://internal.nuget.cityindex.co.uk/api/v2/packages" -InstallationPolicy Trusted
+
+2) Install module for use
+PS: Install-Module -Repository internal.nuget.org -Name Vmware-Workflows -Scope CurrentUser -verbose
+
+To update to latest version
+PS: Update-Module Vmware-Workflows
+
+Notes:
+This Microsoft PowerShell module contains Cmdlets for obtaining information from Vmware VCO (getting workflow information and starting a workflow).
+    </description>
+    <copyright>Copyright 2018</copyright>
+    <tags>vmware workflows teamcity PSModule</tags>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+   <file src="Vmware-Workflows.psd1" target=""/>
+   <file src="Vmware-Workflows.psm1" target=""/>
+   <file src="Get-Workflows.ps1" target=""/>
+   <file src="Invoke-Workflow.ps1" target=""/>
+  </files>
+</package>

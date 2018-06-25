@@ -1,0 +1,15 @@
+{
+    "request": {
+            "method": "POST",
+            "url": "/Transaction/cnp_a",
+			"bodyPatterns": [{ 
+				"contains": "<method>fulfill</method>" }]
+    },
+    "response": {
+            "status": 200,
+            "bodyFileName": "datacashFulfillResponse.xml",
+            "headers": {
+                    "Content-Type": "application/xml"
+            }
+    }
+}
