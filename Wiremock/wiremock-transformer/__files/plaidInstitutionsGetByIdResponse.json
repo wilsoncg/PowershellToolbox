@@ -1,0 +1,28 @@
+{
+	"institution": {
+		"credentials": [{
+			"label": "User ID",
+			"name": "username",
+			"type": "text"
+		},
+		{
+			"label": "Password",
+			"name": "password",
+			"type": "password"
+		}],
+		"has_mfa": true,
+		"institution_id": "ins_3",
+		"mfa": ["code",
+		"list"],
+		"mfa_code_type": "numeric",
+		"name": "Chase",
+		"products": ["assets",
+		"auth",
+		"balance",
+		"transactions",
+		"credit_details",
+		"income",
+		"identity"]
+	},
+	"request_id": "SzGnY7ca7LD2mF8"
+}

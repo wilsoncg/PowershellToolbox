@@ -1,0 +1,13 @@
+{
+	"request": {
+            "method": "POST",
+            "url": "/item/public_token/exchange"
+    },
+    "response": {
+            "status": 200,
+            "bodyFileName": "plaidItemPublicTokenExchangeResponse.json",
+            "headers": {
+                    "Content-Type": "application/json"
+            }
+    }
+}

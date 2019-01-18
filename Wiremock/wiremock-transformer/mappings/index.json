@@ -1,0 +1,20 @@
+{
+    "request": {
+            "method": "GET",
+            "urlPath": "/"
+    },
+    "response": {
+            "status": 200,
+            "bodyFileName": "index.html",
+            "headers": { "Content-Type": "text/html" }
+    },
+	"request": {
+            "method": "GET",
+            "urlPath": "/index.html"
+    },
+    "response": {
+            "status": 200,
+            "bodyFileName": "index.html",
+            "headers": { "Content-Type": "text/html" }
+    }
+}

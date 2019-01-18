@@ -1,0 +1,9 @@
+{
+	"request": {
+		"method": "POST",
+		"url": "/item/public_token/create"
+	},
+	"response": {
+		"proxyBaseUrl": "https://sandbox.plaid.com"
+	}
+}

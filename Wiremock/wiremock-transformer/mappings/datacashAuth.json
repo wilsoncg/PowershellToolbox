@@ -1,0 +1,14 @@
+{
+    "request": {
+            "method": "POST",
+            "url": "/Transaction/cnp_a",
+			"bodyPatterns": [
+			{ "contains": "<method>threedsecure_authorization_request</method>" }]
+    },
+    "response": {
+            "status": 200,
+            "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Response><CardTxn><Cv2Avs><address_policy matched=\"accept\" notchecked=\"accept\" notmatched=\"reject\" notprovided=\"accept\" partialmatch=\"accept\"></address_policy><address_result numeric=\"2\">matched</address_result><cv2_policy matched=\"accept\" notchecked=\"accept\" notmatched=\"reject\" notprovided=\"accept\" partialmatch=\"reject\"></cv2_policy><cv2_result numeric=\"2\">matched</cv2_result><cv2avs_status>ACCEPTED</cv2avs_status><postcode_policy matched=\"accept\" notchecked=\"accept\" notmatched=\"reject\" notprovided=\"accept\" partialmatch=\"accept\"></postcode_policy><postcode_result numeric=\"2\">matched</postcode_result></Cv2Avs><authcode>029454</authcode><card_scheme>VISA Debit</card_scheme><country>United Kingdom</country><issuer>The Co-Operative Bank PLC</issuer></CardTxn><The3rdManRealtime><recommendation>0</recommendation><score>0</score></The3rdManRealtime><datacash_reference>$(Transaction.HistoricTxn.reference)</datacash_reference><merchantreference>$(Transaction.HistoricTxn.reference)</merchantreference><mode>LIVE</mode><reason>ACCEPTED</reason><status>1</status><time>1473337464</time></Response>",
+			"transformers": ["body-transformer"],
+            "headers": { "Content-Type": "application/xml" }
+    }
+}

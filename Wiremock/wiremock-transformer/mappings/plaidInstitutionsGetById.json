@@ -1,0 +1,13 @@
+{
+	"request": {
+            "method": "POST",
+            "url": "/institutions/get_by_id"
+    },
+    "response": {
+            "status": 200,
+            "bodyFileName": "plaidInstitutionsGetByIdResponse.json",
+            "headers": {
+                    "Content-Type": "application/json"
+            }
+    }
+}

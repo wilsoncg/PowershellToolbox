@@ -1,0 +1,13 @@
+{
+	"request": {
+            "method": "POST",
+            "url": "/auth/get"
+    },
+    "response": {
+            "status": 200,
+            "bodyFileName": "plaidAuthGetResponse.json",
+            "headers": {
+                    "Content-Type": "application/json"
+            }
+    }
+}
