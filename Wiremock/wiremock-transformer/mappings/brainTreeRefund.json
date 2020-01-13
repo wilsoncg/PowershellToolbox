@@ -1,0 +1,18 @@
+{
+	"request": {
+			"method": "POST",
+			"urlPattern": "/braintree/.*/refund",
+			"bodyPatterns": [
+			      { "doesNotMatch": ".*33.33.*" }
+	    		]
+	},
+	"response": {
+			"status": 201,
+			"bodyFileName": "brainTreeRefundResponse.json",
+			"headers": {
+					"Content-Type": "application/json"
+			}
+	}		
+}
+
+

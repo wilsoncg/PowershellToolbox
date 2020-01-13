@@ -1,0 +1,15 @@
+{
+	"request": {
+			"method": "POST",
+			"urlPattern": "/braintree/.*/client_token"
+	},
+	"response": {
+			"status": 201,
+			"bodyFileName": "brainTreeClientTokenResponse.json",
+			"headers": {
+					"Content-Type": "application/json"
+			}
+	}		
+}
+
+

@@ -1,0 +1,20 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPattern": "/v1/payments/payouts\\?sync_mode=False",
+    "bodyPatterns": [
+      { "contains": "33.77" }
+    ]
+  },
+	"response": {
+        "status": 200,
+        "fixedDelayMilliseconds": 105000,
+		"bodyFileName": "payPalPayoutResponse.json",
+			"headers": {
+					"Content-Type": "application/json"
+    }
+
+	}
+}
+
+

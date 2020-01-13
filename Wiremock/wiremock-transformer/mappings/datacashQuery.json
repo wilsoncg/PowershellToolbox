@@ -7,7 +7,8 @@
     },
     "response": {
             "status": 200,
-            "bodyFileName": "datacashQueryResponse.xml",
+            "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Response><HpsTxn><capture_status>populated<\/capture_status><card_scheme>VISA<\/card_scheme><cv2_captured>Yes<\/cv2_captured><expirydate>02{{now offset='2 years' format='yy'}}<\/expirydate><issuer>Unknown<\/issuer><pan>444433******0000<\/pan><\/HpsTxn><datacash_reference>{{xPath request.body '//reference/text()'}}<\/datacash_reference><information>Wiremock query response<\/information><merchantreference>{{xPath request.body '//reference/text()'}}<\/merchantreference><mode>LIVE<\/mode><reason>ACCEPTED<\/reason><status>1<\/status><time>1415615624<\/time><\/Response>",
+            "transformers": ["response-template"],
             "headers": {
                     "Content-Type": "application/xml"
             }

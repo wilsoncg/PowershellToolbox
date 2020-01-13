@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<title>SalesForce stub Capture Card Details</title>
+	<style>
+
+		* {
+			box-sizing: border-box;
+		}
+
+		.wrapper {
+			max-width: 360px;
+			width: 100%;
+		}
+		
+		.rightcontainer {
+			clear:left;
+			float:left;
+			width:100%;
+			overflow hidden;
+		}
+		
+		.leftcontainer {
+			float: left;
+			width: 100%;
+			position: relative;
+			right: 50%;
+		}
+		
+		.col1 {
+			float: left;
+			width: 46%;
+			position: relative;
+			left: 52%;
+			overflow: hidden;
+			padding: 5px;
+			border: 1px solid #e3e8e8;
+		}
+		
+		.col2 {
+			float: left;
+			width: 46%;
+			position: relative;
+			left: 56%;
+			overflow: hidden;
+		}
+
+		body {
+			font-family: 'Open Sans', arial, helvetica, sans-serif;
+			font-weight: 400;
+			font-style: normal;
+			background: #fff;
+		}
+
+		.cc__label {
+			font-size: 13px;
+			color: #333;
+			font-weight: 400;
+			margin-bottom: 5px;
+		}
+
+		.cc__container {
+			margin-bottom: 20px;
+		}
+
+		.cc__container::after {
+			content: '';
+			clear: both;
+			display: table;
+		}
+
+		.cc__title {
+			color: #555;
+			font-size: 19.5px;
+			font-weight: 400;
+			margin-bottom: 5px;
+		}
+
+		button {
+			color: #ffffff;
+			background: #8aaf2a;
+			border-radius: 4px;
+			border-color: #8aaf2a;
+			min-width: 100px;
+			cursor: pointer;
+			border-bottom: none;
+			display: block;
+			text-align: center;
+			font-size: 13px;
+			font-weight: 500;
+			padding: 6px 12px;
+			border-right: none;
+			border-left: none;
+			border-top: none;
+			line-height: 1.42857143;
+			text-align: center;
+			white-space: nowrap;
+			vertical-align: middle;
+			margin-top: 40px;
+		}
+		
+		button.invalid {
+			background: #b53427;
+		}
+		
+		.col2 button {
+			margin-top: 2px;
+			margin-bottom: 2px;
+			display: inline;
+		}
+
+		button span::after {
+			display: inline-block;
+			content: '';
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 5px 0 5px 10px;
+			border-color: transparent transparent transparent #fff;
+			margin-left: 10px;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+
+		input {
+			display: block;
+			width: 100%;
+			height: 34px;
+			padding: 6px 12px;
+			font-size: 14px;
+			line-height: 1.42857143;
+			color: #555;
+			background-color: #fff;
+			background-image: none;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+			-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+			-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+			transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+			border-radius: 0;
+			height: 40px;
+			font-size: 13px;
+			font-weight: normal;
+			width: 100%;
+			max-width: 100%;
+			appearance: none;
+			-webkit-appearance: none;
+		}
+
+		.cc__split {
+			width: 58%;
+			float: left;
+		}
+
+		.cc__split:not(:first-child) {
+			margin-left: 4%;
+			width: 38%;
+		}
+
+		.cc__split::after {
+			content: '';
+			clear: both;
+			display: table;
+		}
+
+		.cc__split--exp-date input {
+			width: 48%;
+			float: left;
+		}
+
+		.cc__split--exp-date input:last-child {
+			margin-left: 4%;
+		}
+
+		.cc__error-text {
+			color: #a94442;
+			font-size: 13px;
+		}
+
+		.hr {
+			width: 100%;
+			border-bottom: 1px solid #e3e8e8;
+			margin: 20px 0;
+		}
+
+		.cc__form {
+			margin-top: 20px;
+		}
+
+		.cc__number {
+			text-align: center;
+		}
+
+		.currency__container {
+			display: inline-block;
+			margin-bottom: 0;
+		}
+
+		.cc__title--number {
+			font-size: 11px;
+			color: #555;
+			font-weight: 600;
+		}
+
+		.cc__issue-number-text {
+			float: left;
+			padding-left: 10px;
+			color: #ccc;
+			font-size: 13px;
+			line-height: 40px;
+		}
+
+		.cc__issue-number {
+			max-width: 150px;
+			width: 100%;
+			float: left;
+		}
+
+		.cc--hidden {
+			display: none;
+		}
+
+		/* Added Styles */
+
+		.wrapper--box {
+			padding: 30px 10px;
+			border: 1px solid #e3e8e8;
+			max-width: 390px;
+
+		}
+		@media screen and (min-width:400px) {
+			.wrapper--box {
+				padding: 30px;
+			}
+		}
+
+		button {
+			margin-bottom: 30px;
+		}
+
+		.poweredby__container {
+			height:45px;
+			width:103px;
+			background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGcAAAAtCAYAAACzgnXzAAAAAXNSR0IArs4c6QAADEFJREFUeAHtmXuwVVUdx9fe595zL++XIITI5SGpgAqimaYygw1CaGm+ZpyJAMvHlJZGxViO+ShzJi2yKS31DyszHS0bSzMDszIVNZ+pEAhcXiqKyOve89h9Poez4dxzL48cp3Fy/5jP3WuvvdZv/db3t9Y+e29CyCxTIFMgUyBTIFMgUyBTIFMgUyBT4F0oEO2uTxJC9MaoUROLSXRCkiTnhyhqzoXwkxAlf1zZt+8Tk558spD233jD0AHdeyRHl0I4E6enlkOyKIrDTUmp/Pfm2euWpu2y494rsMvkrG4ZPbUhF81LQnRMPoSGtoRUYfkoCu1kKg7Rova28rW9521d0NQr+UIUojmNcTQs4LFQSAJ9Q0QmS6XwdgjJPcX26Ormc1qX7H1oWctOyXG3rBkx6orGKJ4XR1GORITtadkplp0aE5LUmITeMworekwq7l8uJqHItqm3mMYN+SiUCmFtW6F4To9z1t5X3yY771qBTslZNXL0t3pEucu2JeVQ7roPG4EMNoTQbUI55PtxOqQYGkYUw647kMyGiG7JpvZi6aRus9Yu3JXrD2C9OWiBN4G7zE6LdxZDWDNyzPR8iC7dbWLsQHKaxpRD3J/dUk5CqTUXyq9zD+uU6p3eC+ysOIl6xlHuZ5tuHTh455X/ackIL4Mp/9NRdz8YvxrhQTilvtmO5KA3N6lkXo5b2S53jL25dcV9uVUNoUd6G6NYJEGVnbObBLWXkpDPR6Mao/ys+kCq5/buCd1hKPSHxur5MI59gIEqZttuYLt9wD721ZxXD7CPC8F2tifycD4cD71BYTTHcKz9QD+21SzrZyAMAq0JBoC+HS/VMI3Za2k/iqEZ9GHsxmp7x+OeUxlPf8bBvaij7ahYPnz4+OYoHJX+8HdsVnNG2A2DypXbWpImh+GSTVEob4xD3I/UkqxdmX3grMXzw3UHXBja6toN5/znsBImwTaYD1NhImyAr8KfYF/4Dij0O/AcKP6nYCxcBwpolAvgcrgdFGU2TIcb4DaYA+eCIr4IX4Zl8EMwKcb1PMyEr8DZYAKWw2egHb4HR4ExvgJePxlcDNPAJMkUMEb9mNxnwHp+FzpamvWQy+WPbULypOP1zmcmhzVXfXjbeZ2OyTvpgttZXV8qcXvjEXv0sJ77uorqrYmKY8BgvwiL4SZYDxfAFlCEHJiYqXApfBs+BibQjT8XRsLnwGQ+CSbwR6B4C+Fa+AccDdfDLTALPlQ95xAOgkPhCrgGvP5NuBnOg4WwCb4PJsaxjO84OAQ0F8hkcBFcDOPhp7AATNxbsA90kn7HzsklyakFHpP3aMqihJ1cUVXYc3+7MUz3UrnBlb8U6q2diqtAQS1Pr56v5GgfJ6+AJ8HlcDtorsIrK6UQXuJo4kzoC3APuAvvhu+Cvn8N2kxwByvQFHgdjgeWYMV+y9+7qmV30n1gDNr9MABmgEKn7QZSdvdpboBnwYRoJrkVvuQJ9hdwjirbwXYkB7FdcXtlXeRlr/pVGpk/HDTEXaW30sLbULrFjUlRrdOst6yXNN50DoqgNYMJcNcdB58Ek3QEKIrt7CNOJfXjLU3/T8FCSMdJx6aqUmeffLWsD/2lbT3XFLpWpkKldvufdEzjtN7fH2PotLLTCYViHO601R7N8F1nnVxR1VQbT9eeqqpuLuUa1nXRwss7Yqped6LpaJYVwNV9L3jfPgVOhq+BIsnZYJ8fgzurD/QCA/Q2cgycCN4Gfw/aMvglrIBFsBnqV/Md1NnvPJgCl4DjuZu+Ae7mT8OFYH1qtXMybnf+lTAZXEjeEVTW8dK5VibKOemL8w+3lQtb8NI9XUqVC138KTG9nJu51nAb92Lue8hPji8H5ULybNPS5atqu1fL/qb8DRRGexs89/amrYVHK6UQvs7xargcvO8/DD3BCPrCWdAM+pwLL4N2DcwDRbkR5sNFcC58Ht6B60F7BpZWStv/3MKhD8yEbtAKvwCTob+rwJgXQBNo9u9eKW3/Y/yOY59p8Bw8AGvgMFgJr8HOLCWTQ8OqFaPv7RbF03b7xEbmot5J6H44T2yNeFAKiPrwQjqudvfqvs5YE/mmqNi2NVzSPLtVUerNVeOkTAYjVXaRt5A2cCR3jaTnFCuPubZXFJPhbVAzUQqp2Buh1kye0a8Hx9G8rdn+TUh9GIvX6yfWmzrbv1F3bRDn9nW8NBbHcecYc60Znz7WgeO4czy3XaXtji1ERVgz+sDJuXL5N7zv9Kndk17rYISb5yU034JeShbz/nJgMUS7e4xmpMZclBQK5afnL9h82tzb3l5Oz1SYDu6zk+0K1N4Lw5AlLy3kSffapijmjaVmW9WrhdDFV+NQWh+FOE7KDUPZRbtKjOmHhigq8710VdwQX0xiurqf14/ygT/3B6iDzdiw/tFe/fvnEHMcNLK0c7WJqmRTsUtRobA+eit/cGlx9/Gl7rxY+i3Uf9uzWj3SPmlsjLbycWBJW3vpouZZqx+khcnJdk0H5TufKGGXtmbUmGlREi6gwaRG/h+HY86fFo7FQkjaOD7Xti26se/c9kca+7XP4bvmGVEuGoozvkF7o+M1NYoKxfZkQxyHB4qF/A+a5yx7ucvBssouFUDHXdsLY8fm+2xum9gYhwmlKDeUVxPaJ2vjcvTPtsKWRcNaW7emvTfd2jK4OWo/MsrFBxWL5X5xFG9pyIV/t8Xh8eazWxen7bJjpkCmQKZApsAHVoHa3xzfeH3v9xXHtxdf0Opfvqh6z80YHK/WfCg0Fl9AfarzxbD+JY6qinXVP732XhzTl1N9+bVhw3/p1JdNn07r57hHN7WP0gfT+uPQH1pAZ5XPCBz3ZLVJri3br/68ts63fZ/wfItPzfYj4UgYAS3gInkdtFp/lveD+v622xur9dVVe9/uj4YPwzDw+1wrqM2e+tKkYvZNv0TU99ntueKk5uB+SngILM+ApeAKdvUaUPp+ohh+wtC5AXu0javblebnlLXgNdv5acJPHX428VOF47oCvXY6/ArcHX76cKWdDH+FV2AwDATN/n5iMVmlKmdyTPvr2/7G4So3LmP1w6Lnll18jtMPvO68rHe3GpPfwYzPTzDGNxluBvsPAM2j7RzHeRmjfWyT7nTP7a9/zRi8O/kdMI3DzfEW2Ma4PJpI4+vw1dXVqpiKqsA2doBx4P91HAs6HgWrwRWlWNPB289hsD8MqpaXc7TNaDgQ7KuPEeBuGQL6nwx+FzNIk+9K08fvQHMMJ6yQH4EWcLccDvY5EUysyXI8r40BhTCeFWACPW+FE8B5TgDneDwY28FgzJPAtuvAnaMvxTLxxuk4jukcxsIaOA1MhKYOLqrhcBC4sDaA41p2bOd0JBirZeMw9n3AuZi8ymrxmJrO7KRAD4JiKNL9MABWgYMeAQroqtFsowhO6m7Q+UT4KBioA44H+zwGd4Fjee1F0P860EyCyXBVKY6L4VQ4Chxb/wvBif2riv1jOBT0aV93RksVDpX2Izi64g+Hh+A+cAxF7wmOcQCYJM153AkuvtFwOjgv9XEcY7XcG/T1FOinBWznQncRqpcJMvbHYSqo3WJQl4GwHtJxKXbeOUup+wM8DxvBgJy0E3Vl/RlcrWfAbdAArgTbuwJcVUvAgNrBZBVBs82+8AxshkOq5cM4Fqps5ZiOayLT/vp9AkyI5mRa4BGYAF43IfbZAo79GGgz4A7w+ifgHugDJsnYndfTYKJnw12gqJptvG6STOBgWAmucMdpA+dlXOl46yifDiYjjU9N7GsMjtlchUN4FUySCVZvfemz0thjagovWgKbwAmbIDPtIOPhVXgBXDnb4DXQbP8mWO8EV1fL1rsqFM36ImgrwLY9YT2YNK9Z7g9OwpX9IrhwjMlFYB99W2dirFM0fdtGMT1XIH08BfrWl2WFdl6KZRvFGQn2U2R9aF5X1B7QBMvgWdCX47qQHMfyGtC8ptAKrJbGauJNtDg/52O92q2CMujfWJyTWncwEyD1ZmCK5zUF+yyYfc0BnIDm9bTsMfVloPrQrLeP5q7TrOtTPXqemtcVXXFrTX/dIPWvv9r+lmv7pOPYLi1TrPjQl370NxPc2fXmdX3aNrV0zHScWr+28bx+nvpxPi4QzTH1azuv6V+d37X1o+e4d937/dtRoSa+f8PLIssUyBTIFMgUyBTIFMgUyBTIFMgUyBT4/1DgP4+fR3HB5Hi5AAAAAElFTkSuQmCC');
+			max-width: 103px;
+		}
+
+
+	</style>
+</head>
+
+<body>
+	<div class="leftcontainer">
+	<div class="rightcontainer">
+	<div class="col1">
+		<form action="{{request.requestLine.query.posturl}}" method="post" autocomplete="off" class="payment-form">
+<!-- Payment Reference -->
+			<div class="cc__container">
+				<h2 class="cc__title cc__title--number"> Payment Reference:</h2>
+				<div class="cc__label"> {{request.requestLine.query.HPS_SessionID}} / {{request.requestLine.query.posturl}} </div>
+			</div>
+<!-- Amount -->
+			<div class="cc__container currency__container">
+				<div class="cc__title cc__title--number">Amount:</div>
+				<div class="cc__number">{{request.requestLine.query.amount}} {{request.requestLine.query.currency}}</div>
+			</div>
+
+			<div class="hr"></div>
+
+			<div class="cc__form">
+<!-- Credit / Debit Card -->
+				<div class="cc__container">
+					<div class="cc__label">Card Number</div>
+					<input name="cc_number" maxlength="23" size="26" type="text" />
+				</div>
+<!-- Expiry Date -->
+				<div class="cc__container">
+					<div class="cc__split cc__split--exp-date">
+						<div class="cc__label">Expiry Date</div>
+						<input name="cc_exp" placeholder="MM/YY" />
+					</div>
+					<div class="cc__split">
+						<div class="cc__label">Security Code</div>
+						<input name="cvv" placeholder="CVV2" />
+					</div>
+				</div>
+
+
+				<input value="{{request.requestLine.query.amount}}" name="amount" type="hidden">
+				<input value="{{request.requestLine.query.currency}}" name="currency" type="hidden">
+				<input value="{{request.requestLine.query.HPS_SessionID}}" name="dts_reference" type="hidden">
+				<input value="confirm" name="action" type="hidden">
+
+				<button type="submit" id="continue" class="btnBack"><span>Continue</span></button>
+
+				<!-- New HTML -->
+
+				<div class="poweredby__container">
+					<div id="poweredby"></div>
+				</div>
+			</div>
+		</form>
+		</div>
+		<div class="col2">
+			<h2 class="cc__title cc__title--number">Populate with test data:</h2>
+			<button type="button" id="validVisa">Visa</button>
+			<button type="button" id="validMastercard">Mastercard</button>
+			<button type="button" id="validMastercard2">Mastercard2</button>
+			<button type="button" id="validMastercard3">Mastercard3</button>
+			<button type="button" class="invalid" id="cvvmismatch">CvvMismatch</button>
+			<button type="button" class="invalid" id="amex">Amex</button>
+			<button type="button" class="invalid" id="amex">Discover</button>
+			<h2 class="cc__title cc__title--number">Triggering errors:</h2>
+			<ul>
+			<li>Amounts under 1.00 generate failure</li>
+            <li>To cause a declined message, pass an amount less than 1.00.</li>
+            <li>To trigger a fatal error message, pass an invalid card number.</li>
+            <li>To simulate an AVS match, pass 888 in the address1 field, 77777 for zip.</li>
+            <li>To simulate a CVV match, pass 999 in the cvv field.</li>
+            </ul>
+		</div>
+	</div>
+	</div>
+
+	<script src="/salesforce-hcc/jquery.min.js"></script>
+	<script src="/salesforce-hcc/jquery.formautofill.js"></script>
+	<script src="/salesforce-hcc/valid-invalid-buttons.js"></script>
+</body>
+</html>

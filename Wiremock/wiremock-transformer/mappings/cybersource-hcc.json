@@ -1,0 +1,12 @@
+{
+    "request": {
+            "method": "POST",
+            "urlPath": "/cybersource-hcc/"
+    },
+    "response": {
+            "status": 200,
+            "bodyFileName": "cybersource-hcc/index.html",
+			"transformers": ["response-template"],
+            "headers": { "Content-Type": "text/html" }
+    }
+}

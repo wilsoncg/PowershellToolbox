@@ -1,6 +1,6 @@
 {
 	"LogonUserName" : "Wiremock user",
-	"PersonalEmailAddress" : "wiremockuser@cityindex.com",
+	"PersonalEmailAddress" : "wiremockuser@mail.com",
 	"AccountOperatorId" : 2222,
 	"ClientAccountCurrency" : "USD",
 	"AccountHolders" : 

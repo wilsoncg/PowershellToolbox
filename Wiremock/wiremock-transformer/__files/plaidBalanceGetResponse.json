@@ -1,0 +1,19 @@
+{
+  "accounts": [{
+     "account_id": "AAAzevvp33HxPWpoqn6rI13BxW4awNSjnw4xv",
+     "balances": {
+       "available": 1000,
+       "current": 1100,
+       "limit": null,
+       "iso_currency_code": "USD",
+       "unofficial_currency_code": null
+     },
+     "mask": "0000",
+     "name": "Plaid Checking",
+     "official_name": "Plaid Gold Checking",
+     "subtype": "checking",
+     "type": "depository"
+  }],
+  "item": {},
+  "request_id": "m8MDnv9okwxFNBV"
+}

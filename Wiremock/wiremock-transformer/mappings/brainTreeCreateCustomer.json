@@ -1,0 +1,15 @@
+{
+	"request": {
+			"method": "POST",
+			"urlPattern": "/braintree/.*/customers/.*" 
+		   },
+	"response": {
+			"status": 200,
+			"bodyFileName": "brainTreeFindCustomerResponse.json",
+			"headers": {
+					"Content-Type": "application/json"
+			}
+	}		
+}
+
+

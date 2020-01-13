@@ -1,0 +1,18 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPattern": "/v1/payments/payouts\\?sync_mode=False",
+    "bodyPatterns": [
+      { "contains": "33.33" }
+    ]
+  },
+	"response": {
+			"status": 201,
+			"bodyFileName": "payPalPayoutResponseFail.json",
+			"headers": {
+					"Content-Type": "application/json"
+			}
+	}		
+}
+
+

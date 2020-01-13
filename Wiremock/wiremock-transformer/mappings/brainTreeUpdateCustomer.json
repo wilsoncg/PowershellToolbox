@@ -1,0 +1,15 @@
+{
+	"request": {
+			"method": "PUT",
+			"urlPattern": "/braintree/.*/customers/.*"
+	},
+	"response": {
+			"status": 200,
+			"bodyFileName": "brainTreeUpdateCustomerResponse.json",
+			"headers": {
+					"Content-Type": "application/json"
+			}
+	}		
+}
+
+

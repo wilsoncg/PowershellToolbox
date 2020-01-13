@@ -3,12 +3,12 @@
 			"method": "POST",
 			"url": "/auth/get",
 			"bodyPatterns":[{
-			"matchesJsonPath" : "$..account_ids[?(@ != '4101' && @ != '4100')]"
+			"matchesJsonPath" : "$..account_ids[?(@ =='4101')]"
 			}]
 	},
 	"response": {
 			"status": 200,
-			"bodyFileName": "plaidAuthGetResponse.json",
+			"bodyFileName": "plaidAuthGetResponse2.json",
 			"headers": {
 					"Content-Type": "application/json"
 			}

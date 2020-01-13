@@ -1,0 +1,11 @@
+{
+  "name": "ERROR_NAME",
+  "message": "ERROR_DESCRIPTION",
+  "information_link": "ERROR_DOCUMENTATION_LINK",
+  "details": [
+    {
+      "field": "field_name",
+      "issue": "problem_with_field"
+    }
+  ]
+}

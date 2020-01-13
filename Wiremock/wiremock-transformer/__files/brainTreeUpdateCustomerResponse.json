@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api-error-response>
+  <errors>
+    <errors type="array"/>
+    <customer>
+      <errors type="array">
+        <error>
+          <code>81604</code>
+          <attribute type="symbol">email</attribute>
+          <message>Email is an invalid format.</message>
+        </error>
+      </errors>
+    </customer>
+  </errors>
+  <params>
+    <customer>
+      <company>Forex</company>
+      <email>email@email.com</email>
+    </customer>
+  </params>
+  <message>Email is an invalid format.</message>
+</api-error-response>

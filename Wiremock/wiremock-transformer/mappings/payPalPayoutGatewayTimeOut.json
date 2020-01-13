@@ -1,0 +1,18 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPattern": "/v1/payments/payouts\\?sync_mode=False",
+    "bodyPatterns": [
+      { "contains": "33.66" }
+    ]
+  },
+	"response": {
+			"status": 504,
+			"bodyFileName": "payPalGatewayTimeOutResponse.json",
+			"headers": {
+					"Content-Type": "application/json"
+			}
+	}
+}
+
+

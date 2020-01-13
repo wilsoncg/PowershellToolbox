@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api-error-response>
+  <errors>
+    <errors type="array"/>
+    <transaction>
+      <errors type="array">
+        <error>
+          <code>91565</code>
+          <attribute type="symbol">payment_method_nonce</attribute>
+          <message>Unknown or expired payment_method_nonce.</message>
+        </error>
+      </errors>
+   </transaction>
+  </errors>
+  <params>
+    <transaction>
+      <amount>10.00</amount>
+      <customer-id>123456789</customer-id>
+      <order-id>1-123456789-Forex</order-id>
+      <payment-method-nonce>f8296943-231d-0f7f-7ffd-a34f8eff7a91</payment-method-nonce>
+      <merchant-account-id>gbp</merchant-account-id>
+      <type>sale</type>
+      <options>
+        <store-in-vault>true</store-in-vault>
+        <store-in-vault-on-success>true</store-in-vault-on-success>
+        <submit-for-settlement>true</submit-for-settlement>
+      </options>
+    </transaction>
+  </params>
+  <message>Unknown or expired payment_method_nonce.</message>
+</api-error-response>

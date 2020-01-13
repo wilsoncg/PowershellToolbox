@@ -1,0 +1,10 @@
+{
+    "request": {
+            "method": "POST",
+            "url": "/ClientManagement/ClientManagementService.asmx"
+    },
+    "response": {
+            "proxyBaseUrl" : "http://current.webservices/"
+    },
+    "priority" : 10
+}

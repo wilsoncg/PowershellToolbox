@@ -7,8 +7,8 @@
     },
     "response": {
             "status": 200,
-            "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Response><CardTxn><card_scheme>VISA Debit</card_scheme><country>United Kingdom</country><token>C4360560C4AF6E9370E3AEC068ECBE94828D2B5B</token></CardTxn><datacash_reference>$(!RandomInteger)</datacash_reference><merchantreference>$(Transaction.TxnDetails.merchantreference)</merchantreference><mode>LIVE</mode><reason>3DS Card not Enrolled</reason><status>162</status><time>1473337464</time></Response>",
-			"transformers": ["body-transformer"],
+            "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Response><CardTxn><card_scheme>VISA Debit</card_scheme><country>United Kingdom</country><token>C4360560C4AF6E9370E3AEC068ECBE94828D2B5B</token></CardTxn><datacash_reference>{{randomValue length=12 type='ALPHANUMERIC'}}</datacash_reference><merchantreference>{{xPath request.body '//Transaction/TxnDetails/merchantreference/text()'}}</merchantreference><mode>LIVE</mode><reason>3DS Card not Enrolled</reason><status>162</status><time>1473337464</time></Response>",
+			"transformers": ["response-template"],
             "headers": { "Content-Type": "application/xml" }
     }
 }

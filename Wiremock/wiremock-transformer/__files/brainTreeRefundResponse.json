@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transaction>
+  <id>6j5chnzf</id>
+  <status>settling</status>
+  <type>credit</type>
+  <currency-iso-code>GBP</currency-iso-code>
+  <amount>1.00</amount>
+  <merchant-account-id>gbp</merchant-account-id>
+  <sub-merchant-account-id nil="true"/>
+  <master-merchant-account-id nil="true"/>
+  <order-id>1-1234567-Forex</order-id>
+  <created-at type="datetime">2019-05-02T15:16:23Z</created-at>
+  <updated-at type="datetime">2019-05-02T15:16:27Z</updated-at>
+  <customer>
+    <id>92810964</id>
+    <first-name>test</first-name>
+    <last-name>buyer</last-name>
+    <company>Forex</company>
+    <email>mail@mail.com</email>
+    <website nil="true"/>
+    <phone nil="true"/>
+    <fax nil="true"/>
+  </customer>
+  <billing>
+    <id nil="true"/>
+    <first-name nil="true"/>
+    <last-name nil="true"/>
+    <company nil="true"/>
+    <street-address nil="true"/>
+    <extended-address nil="true"/>
+    <locality nil="true"/>
+    <region nil="true"/>
+    <postal-code nil="true"/>
+    <country-name nil="true"/>
+    <country-code-alpha2 nil="true"/>
+    <country-code-alpha3 nil="true"/>
+    <country-code-numeric nil="true"/>
+  </billing>
+  <refund-id nil="true"/>
+  <refund-ids type="array"/>
+  <refunded-transaction-id>64zwxn8x</refunded-transaction-id>
+  <partial-settlement-transaction-ids type="array"/>
+  <authorized-transaction-id nil="true"/>
+  <settlement-batch-id>2019-05-03_gbp_avr2as0v</settlement-batch-id>
+  <shipping>
+    <id nil="true"/>
+    <first-name nil="true"/>
+    <last-name nil="true"/>
+    <company nil="true"/>
+    <street-address nil="true"/>
+    <extended-address nil="true"/>
+    <locality nil="true"/>
+    <region nil="true"/>
+    <postal-code nil="true"/>
+    <country-name nil="true"/>
+    <country-code-alpha2 nil="true"/>
+    <country-code-alpha3 nil="true"/>
+    <country-code-numeric nil="true"/>
+  </shipping>
+  <custom-fields/>
+  <avs-error-response-code nil="true"/>
+  <avs-postal-code-response-code>A</avs-postal-code-response-code>
+  <avs-street-address-response-code>A</avs-street-address-response-code>
+  <cvv-response-code>A</cvv-response-code>
+  <gateway-rejection-reason nil="true"/>
+  <processor-authorization-code nil="true"/>
+  <processor-response-code>1002</processor-response-code>
+  <processor-response-text>Processed</processor-response-text>
+  <additional-processor-response nil="true"/>
+  <voice-referral-number nil="true"/>
+  <purchase-order-number nil="true"/>
+  <tax-amount nil="true"/>
+  <tax-exempt type="boolean">false</tax-exempt>
+  <credit-card>
+    <token nil="true"/>
+    <bin nil="true"/>
+    <last-4 nil="true"/>
+    <card-type nil="true"/>
+    <expiration-month></expiration-month>
+    <expiration-year></expiration-year>
+    <customer-location nil="true"/>
+    <cardholder-name nil="true"/>
+    <image-url>https://assets.braintreegateway.com/payment_method_logo/unknown.png?environment=sandbox</image-url>
+    <prepaid>Unknown</prepaid>
+    <healthcare>Unknown</healthcare>
+    <debit>Unknown</debit>
+    <durbin-regulated>Unknown</durbin-regulated>
+    <commercial>Unknown</commercial>
+    <payroll>Unknown</payroll>
+    <issuing-bank>Unknown</issuing-bank>
+    <country-of-issuance>Unknown</country-of-issuance>
+    <product-id>Unknown</product-id>
+    <global-id nil="true"/>
+    <account-type nil="true"/>
+    <unique-number-identifier nil="true"/>
+    <venmo-sdk type="boolean">false</venmo-sdk>
+  </credit-card>
+  <paypal>
+    <token nil="true"/>
+    <payer-email>mail@mail.com</payer-email>
+    <payment-id>PAYID-LTFN6MQ3PM555649P493280B</payment-id>
+    <authorization-id nil="true"/>
+    <image-url>https://assets.braintreegateway.com/payment_method_logo/paypal.png?environment=sandbox</image-url>
+    <debug-id>53b3a8273fa60</debug-id>
+    <payee-id nil="true"/>
+    <payee-email nil="true"/>
+    <custom-field nil="true"/>
+    <payer-id>S5YNZVM2M85EU</payer-id>
+    <payer-first-name>test</payer-first-name>
+    <payer-last-name>buyer</payer-last-name>
+    <payer-status>VERIFIED</payer-status>
+    <seller-protection-status>ELIGIBLE</seller-protection-status>
+    <capture-id>6V182154JE121081L</capture-id>
+    <refund-id>5907062231905752X</refund-id>
+    <transaction-fee-amount nil="true"/>
+    <transaction-fee-currency-iso-code nil="true"/>
+    <refund-from-transaction-fee-amount>0.03</refund-from-transaction-fee-amount>
+    <refund-from-transaction-fee-currency-iso-code>GBP</refund-from-transaction-fee-currency-iso-code>
+    <description nil="true"/>
+    <global-id nil="true"/>
+  </paypal>
+  <status-history type="array">
+    <status-event>
+      <timestamp type="datetime">2019-05-02T15:16:23Z</timestamp>
+      <status>submitted_for_settlement</status>
+      <amount>1.00</amount>
+      <user>wilsoncg</user>
+      <transaction-source>api</transaction-source>
+    </status-event>
+    <status-event>
+      <timestamp type="datetime">2019-05-02T15:16:27Z</timestamp>
+      <status>settling</status>
+      <amount>1.00</amount>
+      <user>wilsoncg</user>
+      <transaction-source>api</transaction-source>
+    </status-event>
+  </status-history>
+  <plan-id nil="true"/>
+  <subscription-id nil="true"/>
+  <subscription>
+    <billing-period-end-date nil="true"/>
+    <billing-period-start-date nil="true"/>
+  </subscription>
+  <add-ons type="array"/>
+  <discounts type="array"/>
+  <descriptor>
+    <name nil="true"/>
+    <phone nil="true"/>
+    <url nil="true"/>
+  </descriptor>
+  <recurring nil="true"/>
+  <channel nil="true"/>
+  <service-fee-amount nil="true"/>
+  <escrow-status nil="true"/>
+  <disbursement-details>
+    <disbursement-date nil="true"/>
+    <settlement-amount nil="true"/>
+    <settlement-currency-iso-code nil="true"/>
+    <settlement-currency-exchange-rate nil="true"/>
+    <funds-held nil="true"/>
+    <success nil="true"/>
+  </disbursement-details>
+  <disputes type="array"/>
+  <authorization-adjustments type="array"/>
+  <payment-instrument-type>paypal_account</payment-instrument-type>
+  <processor-settlement-response-code>4000</processor-settlement-response-code>
+  <processor-settlement-response-text>Confirmed</processor-settlement-response-text>
+  <three-d-secure-info nil="true"/>
+  <ships-from-postal-code nil="true"/>
+  <shipping-amount nil="true"/>
+  <discount-amount nil="true"/>
+  <network-transaction-id nil="true"/>
+  <refund-global-ids type="array"/>
+  <partial-settlement-transaction-global-ids type="array"/>
+  <refunded-transaction-global-id>dHJhbnNhY3Rpb25fNjR6d3huOHg</refunded-transaction-global-id>
+  <authorized-transaction-global-id nil="true"/>
+  <global-id>cmVmdW5kXzZqNWNobnpm</global-id>
+  <processor-response-type>approved</processor-response-type>
+  <authorization-expires-at nil="true"/>
+</transaction>

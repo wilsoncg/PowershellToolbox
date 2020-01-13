@@ -1,9 +1,13 @@
 {
     "request": {
             "method": "POST",
-            "url": "/ClientManagement/ClientManagementService.asmx"
+            "url": "/ClientManagement/ClientManagementService.asmx",
+            "bodyPatterns": [{ 
+				"matchesXPath": "//*[local-name()='WithdrawalTicketGetDataByTradingAccount']" }]
     },
     "response": {
-			"fault": "MALFORMED_RESPONSE_CHUNK"
-    }
+            "bodyFileName": "withdrawalTicketCannedResponse.xml",
+            "headers": { "Content-Type": "text/xml;charset=utf-8" }
+    },
+    "priority" : 1
 }

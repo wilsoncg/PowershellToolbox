@@ -5,11 +5,12 @@
 			"bodyPatterns": [{ 
 				"contains": "<method>setup</method>" }]
     },
-    "response": {
-            "status": 200,
-            "bodyFileName": "datacashSetupResponse.xml",
-            "headers": {
-                    "Content-Type": "application/xml"
-            }
+  "response": {
+    "status": 200,
+    "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Response><HpsTxn><hps_url>{{request.requestLine.baseUrl}}\/datacash-hcc\/index.html<\/hps_url><session_id>{{now format='unix'}}&amp;posturl={{#assign \"returnUrl\"}}{{xPath request.body '//return_url/text()'}}{{/assign}}{{urlEncode returnUrl}}&amp;amount={{xPath request.body '//amount/text()'}}&amp;currency={{xPath request.body '//amount/@currency'}}<\/session_id><\/HpsTxn><datacash_reference>{{now format='unix'}}<\/datacash_reference><merchantreference>{{xPath request.body '//merchantreference/text()'}}<\/merchantreference><mode>LIVE<\/mode><reason>ACCEPTED<\/reason><status>1<\/status><time>1415375386<\/time><\/Response>",
+    "transformers": [ "response-template" ],
+    "headers": {
+      "Content-Type": "application/xml"
     }
+  }
 }

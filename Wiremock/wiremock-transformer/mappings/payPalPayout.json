@@ -1,0 +1,15 @@
+{
+	"request": {
+			"method": "POST",
+			"urlPattern": "/v1/payments/payouts\\?sync_mode=False"
+	},
+	"response": {
+			"status": 200,
+			"bodyFileName": "payPalPayoutResponse.json",
+			"headers": {
+					"Content-Type": "application/json"
+			}
+	}		
+}
+
+

@@ -1,0 +1,12 @@
+{
+    "request": {
+            "method": "GET",
+            "urlPath": "/datacash-hcc/index.html"
+    },
+    "response": {
+            "status": 200,
+            "bodyFileName": "datacash-hcc/index.html",
+			"transformers": ["response-template"],
+            "headers": { "Content-Type": "text/html" }
+    }
+}

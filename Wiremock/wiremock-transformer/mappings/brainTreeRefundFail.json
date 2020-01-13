@@ -1,0 +1,18 @@
+{
+	"request": {
+			"method": "POST",
+			"urlPattern": "/braintree/.*/refund",
+			"bodyPatterns": [
+			      { "contains": "<amount>33.33</amount>" }
+	    		]
+	},
+	"response": {
+			"status": 201,
+			"bodyFileName": "brainTreeRefundResponseFail.json",
+			"headers": {
+					"Content-Type": "application/json"
+			}
+	}		
+}
+
+

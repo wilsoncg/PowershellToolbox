@@ -1,0 +1,18 @@
+{
+	"request": {
+			"method": "POST",
+			"urlPattern": "/braintree/.*/refund",
+			"bodyPatterns": [
+			      { "contains": "<amount>33.55</amount>" }
+	    		]
+	},
+	"response": {
+			"status": 200,
+			"body": "",
+			"headers": {
+					"Content-Type": "application/xml"
+			}
+	}		
+}
+
+

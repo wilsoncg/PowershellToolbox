@@ -1,0 +1,17 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPattern": "/v1/payments/payouts\\?sync_mode=False",
+    "bodyPatterns": [
+      { "contains": "33.44" }
+    ]
+  },
+	"response": {
+			"status": 500,
+			"headers": {
+					"Content-Type": "application/json"
+			}
+	}		
+}
+
+

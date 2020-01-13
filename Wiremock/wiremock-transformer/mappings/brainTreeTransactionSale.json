@@ -1,0 +1,18 @@
+{
+	"request": {
+			"method": "POST",
+			"urlPattern": "/braintree/.*/transactions",
+			"bodyPatterns": [
+			      { "doesNotMatch": ".*33.33.*" }
+	    		]
+	},
+	"response": {
+			"status": 201,
+			"bodyFileName": "brainTreeTransactionSaleResponse.json",
+			"headers": {
+					"Content-Type": "application/json"
+			}
+	}		
+}
+
+

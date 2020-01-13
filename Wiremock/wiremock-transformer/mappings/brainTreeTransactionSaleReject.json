@@ -1,0 +1,18 @@
+{
+	"request": {
+			"method": "POST",
+			"urlPattern": "/braintree/.*/transactions",
+			"bodyPatterns": [
+			      { "contains": "<amount>50.44</amount>" }
+	    		]
+	},
+	"response": {
+			"status": 201,
+			"bodyFileName": "brainTreeTransactionSaleResponseReject.xml",
+			"headers": {
+					"Content-Type": "application/xml"
+			}
+	}		
+}
+
+

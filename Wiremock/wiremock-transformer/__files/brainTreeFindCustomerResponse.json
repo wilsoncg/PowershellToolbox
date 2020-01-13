@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customer>
+  <id>11709012</id>
+  <merchant-id>b9rvrf8kpcz7ffjj</merchant-id>
+  <first-name>test</first-name>
+  <last-name>buyer</last-name>
+  <company>Forex</company>
+  <email>mail@mail.co.uk</email>
+  <phone nil="true"/>
+  <fax nil="true"/>
+  <website nil="true"/>
+  <created-at type="datetime">2019-01-31T16:26:09Z</created-at>
+  <updated-at type="datetime">2019-02-12T16:37:55Z</updated-at>
+  <custom-fields/>
+  <global-id>Y3VzdG9tZXJfMTE3MDkwMTI</global-id>
+  <credit-cards type="array"/>
+  <addresses type="array"/>
+</customer>
